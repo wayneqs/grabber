@@ -1,0 +1,41 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.2.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+allprojects {
+    apply plugin: 'java'
+    group 'com.labfabulous.money'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    sourceCompatibility = 1.8
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.11'
+        testCompile 'org.assertj:assertj-core:3.6.2'
+    }
+}
+
+project(':grabber-rest') {
+    apply plugin: 'org.springframework.boot'
+    dependencies {
+        compileOnly('org.projectlombok:lombok')
+        compile project(':grabber-lib')
+        compile("org.springframework.boot:spring-boot-devtools")
+        compile('org.springframework.boot:spring-boot-starter-actuator')
+        compile('org.springframework.boot:spring-boot-actuator-docs')
+        compile('org.springframework.boot:spring-boot-starter-web')
+        testCompile('org.springframework.boot:spring-boot-starter-test')
+    }
+}

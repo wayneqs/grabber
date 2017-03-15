@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber-lib/grabber-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber-lib/grabber-lib.iml" group="grabber-lib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber-lib/grabber-lib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber-lib/grabber-lib_main.iml" group="grabber-lib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber-lib/grabber-lib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber-lib/grabber-lib_test.iml" group="grabber-lib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber-rest/grabber-rest.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber-rest/grabber-rest.iml" group="grabber-rest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber-rest/grabber-rest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber-rest/grabber-rest_main.iml" group="grabber-rest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber-rest/grabber-rest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber-rest/grabber-rest_test.iml" group="grabber-rest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber_main.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber_main.iml" group="grabber" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grabber_test.iml" filepath="$PROJECT_DIR$/.idea/modules/grabber_test.iml" group="grabber" />
+    </modules>
+  </component>
+</project>

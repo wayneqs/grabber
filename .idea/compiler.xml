@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="grabber-lib_main" target="1.8" />
+      <module name="grabber-lib_test" target="1.8" />
+      <module name="grabber-rest_main" target="1.8" />
+      <module name="grabber-rest_test" target="1.8" />
+      <module name="grabber_main" target="1.8" />
+      <module name="grabber_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

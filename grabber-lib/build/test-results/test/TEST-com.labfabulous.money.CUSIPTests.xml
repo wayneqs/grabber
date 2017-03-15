@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.labfabulous.money.CUSIPTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-03-15T16:44:13" hostname="Quinlivan-iMac.home" time="0.045">
+  <properties/>
+  <testcase name="grabsDespiteWordSeparators" classname="com.labfabulous.money.CUSIPTests" time="0.042"/>
+  <testcase name="handlesHashInIdentifier" classname="com.labfabulous.money.CUSIPTests" time="0.0"/>
+  <testcase name="grabsLowerCase" classname="com.labfabulous.money.CUSIPTests" time="0.0"/>
+  <testcase name="grabsMultiple" classname="com.labfabulous.money.CUSIPTests" time="0.001"/>
+  <testcase name="isCaseInsensitive" classname="com.labfabulous.money.CUSIPTests" time="0.0"/>
+  <testcase name="grabsUpperCase" classname="com.labfabulous.money.CUSIPTests" time="0.0"/>
+  <testcase name="handlesAtSymbolInIdentifier" classname="com.labfabulous.money.CUSIPTests" time="0.0"/>
+  <testcase name="handlesStarInIdentifier" classname="com.labfabulous.money.CUSIPTests" time="0.0"/>
+  <testcase name="filtersOutWrongUns" classname="com.labfabulous.money.CUSIPTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
