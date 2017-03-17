@@ -24,12 +24,12 @@ public class SEDOLTests {
 
     @Test
     public void grabsDespiteWordSeparators() {
-        assertThat(new SEDOL().grab("com.labfabulous.money.SEDOL:B000009")).hasSize(1);
+        assertThat(new SEDOL().grab("SEDOL:B000009")).hasSize(1);
         assertThat(new SEDOL().grab("com.labfabulous.money.SEDOL: B000009")).hasSize(1);
         assertThat(new SEDOL().grab(": B000009")).hasSize(1);
         assertThat(new SEDOL().grab(":B000009")).hasSize(1);
-        assertThat(new SEDOL().grab("com.labfabulous.money.SEDOL-B000009")).hasSize(1);
-        assertThat(new SEDOL().grab("com.labfabulous.money.SEDOL- B000009")).hasSize(1);
+        assertThat(new SEDOL().grab("SEDOL-B000009")).hasSize(1);
+        assertThat(new SEDOL().grab("SEDOL- B000009")).hasSize(1);
         assertThat(new SEDOL().grab("- B000009")).hasSize(1);
         assertThat(new SEDOL().grab("-B000009")).hasSize(1);
     }

@@ -20,7 +20,7 @@ public class GrabberApp {
     @Autowired
     private IdentifierFinderService finder;
 
-    @RequestMapping(value = "/extract",
+    @RequestMapping(value = "/",
                     method = RequestMethod.POST,
                     consumes = "text/plain",
                     produces = "application/json")

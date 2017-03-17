@@ -20,7 +20,7 @@ public final class SEDOL extends Grabber {
         }
         int check = (10 - sum % 10) % 10;
         if (check == Character.digit(id.charAt(6), 36)) {
-            return Optional.of(new Identifier(id, "com.labfabulous.money.SEDOL"));
+            return Optional.of(new Identifier(id, "SEDOL"));
         }
         return Optional.empty();
     }

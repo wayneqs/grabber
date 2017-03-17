@@ -24,12 +24,12 @@ public class ISINTests {
 
     @Test
     public void grabsDespiteWordSeparators() {
-        assertThat(new ISIN().grab("com.labfabulous.money.ISIN:US0378331005")).hasSize(1);
-        assertThat(new ISIN().grab("com.labfabulous.money.ISIN: US0378331005")).hasSize(1);
+        assertThat(new ISIN().grab("ISIN:US0378331005")).hasSize(1);
+        assertThat(new ISIN().grab("ISIN: US0378331005")).hasSize(1);
         assertThat(new ISIN().grab(": US0378331005")).hasSize(1);
         assertThat(new ISIN().grab(":US0378331005")).hasSize(1);
-        assertThat(new ISIN().grab("com.labfabulous.money.ISIN-US0378331005")).hasSize(1);
-        assertThat(new ISIN().grab("com.labfabulous.money.ISIN- US0378331005")).hasSize(1);
+        assertThat(new ISIN().grab("ISIN-US0378331005")).hasSize(1);
+        assertThat(new ISIN().grab("ISIN- US0378331005")).hasSize(1);
         assertThat(new ISIN().grab("- US0378331005")).hasSize(1);
         assertThat(new ISIN().grab("-US0378331005")).hasSize(1);
     }
