@@ -12,7 +12,7 @@ public final class ISIN extends Grabber {
     }
 
     @Override
-    protected Optional<Identifier> create(String id) {
+    protected Optional<Identifier> identifierFromText(String id) {
         StringBuilder builder = new StringBuilder();
         for(int i = 0; i < id.length(); i++) {
             builder.append(Character.digit(id.charAt(i), 36));

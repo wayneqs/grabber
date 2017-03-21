@@ -13,7 +13,7 @@ public final class CUSIP extends Grabber {
     }
 
     @Override
-    protected Optional<Identifier> create(String id) {
+    protected Optional<Identifier> identifierFromText(String id) {
         int sum = 0;
         for(int i = 0; i < ID_MAX_LENGTH - 1; i++) {
             int digit = convertToDigit(id.charAt(i));

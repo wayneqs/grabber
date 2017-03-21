@@ -12,7 +12,7 @@ public final class SEDOL extends Grabber {
     }
 
     @Override
-    protected Optional<Identifier> create(String id) {
+    protected Optional<Identifier> identifierFromText(String id) {
         int[] weights = {1, 3, 1, 7, 3, 9, 1};
         int sum = 0;
         for(int i = 0; i < 6; i++) {

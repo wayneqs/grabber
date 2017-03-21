@@ -7,12 +7,12 @@ import java.util.stream.Collectors;
 
 public abstract class Grabber {
 
-    protected abstract Optional<Identifier> create(String id);
+    protected abstract Optional<Identifier> identifierFromText(String id);
     protected abstract Pattern getPattern();
 
     public List<Identifier> grab(String text) {
         return extract(text).parallelStream()
-                .map(id -> create(id))
+                .map(possibleIdText -> identifierFromText(possibleIdText))
                 .filter(id -> id.isPresent())
                 .map(id -> id.get())
                 .collect(Collectors.toList());
